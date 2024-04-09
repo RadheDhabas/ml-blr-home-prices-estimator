@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Price Estimator for Bangaluru City</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<h1>Home Price Estimator</h1>
+<form id="homePriceForm">
+    <div class="input-group">
+        <label for="location">Select Location:</label>
+        <select id="location" name="location"></select>
+    </div>
+    <div class="input-group">
+        <label for="sqft">Approx. Square Feet:</label>
+        <input type="number" id="sqft" name="total_sqft" min="0" required>
+    </div>
+    <div class="input-group">
+        <label for="bhk">Number of BHK:</label>
+        <select id="bhk" name="bhk" required>
+            <option value="">Select BHK</option>
+            <!-- Add options for BHK 1 to 10 -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <!-- Add more options for BHK 3 to 10 if needed -->
+        </select>
+    </div>
+    <div class="input-group">
+        <label for="bath">Number of Baths:</label>
+        <select id="bath" name="bath" required>
+            <option value="">Select Baths</option>
+            <!-- Add options for baths 1 to 12 -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <!-- Add more options for baths 3 to 12 if needed -->
+        </select>
+    </div>
+    <button type="submit">Estimate Price</button>
+</form>
+<div id="responseBox" class="response-box"></div>
+<script src="script.js"></script>
+</body>
+</html>
