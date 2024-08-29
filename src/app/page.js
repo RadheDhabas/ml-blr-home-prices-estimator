@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import "../css/blr_model.css";
+import "./blr_model.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
